@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador</title>
-    <link rel="shortcut icon" href="/" type="i">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="/assets/GiraMoon1.png" type="i">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
     
 
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="/assets/GiraMoon.png" alt="Uma lua rocha mostrando a lingua">
+        <h1 class="ccabecalho__titulo">Digite seu texto para Criptografar ou Descriptografar</h1>
+    </header>
     <main class="container">
-        <div class="container__conteudo">
-            <h1>Digite seu texto para Criptografar ou Descriptografar</h1>
-            <textarea  id="input-text" placeholder="Digite seu texto aqui..."></textarea>
-        </div>
-        <div class="conteiner__buttons">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-            <button>Recomeçar</button>
-            
+        <div class="conteiner__input">
+        <textarea  id="input-text" placeholder="Digite seu texto aqui..."></textarea>
         </div>
         <div class="container__texto">
             <h2>Nenhuma mensagem encontrada</h2>
             <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
+        <div class="conteiner__buttons">
+            <button>Criptografar</button>
+            <button>Descriptografar</button>
+            <button>Recomeçar</button>
+        </div>
     </main>
+    
+    <script src="/scripts/interacao.js"></script>
 </body>
 </html>
