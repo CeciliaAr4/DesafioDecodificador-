@@ -10,24 +10,38 @@
 <body>
     
 
-    <header class="cabecalho">
-        <img class="cabecalho__logo" src="/assets/GiraMoon.png" alt="Uma lua rocha mostrando a lingua">
-        <h1 class="ccabecalho__titulo">Digite seu texto para Criptografar ou Descriptografar</h1>
-    </header>
+   
     <main class="container">
+        <header class="cabecalho">
+            <img class="cabecalho__logo" src="/assets/GiraMoon1.png" alt="Uma lua rocha mostrando a lingua">
+            <h1 class="ccabecalho__titulo">Mensagens Criptografadas</h1>
+        </header>
         <div class="conteiner__input">
-        <textarea  id="input-text" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="input">
+                 <textarea  id="input-text" placeholder="Digite seu texto aqui..."></textarea>
+                <p>ATENÇÃO! Use apenas letras minusculas e sem acento.</p>
+            </div>    
+            
+        <div id="output">
+            <img class="output-img" src="/assets/GiraMoon1.png" alt="">
+            <h2>Sua mensagem aparecerá aqui!</h2>
+            <span>Digite um texto que deseja criptografar ou descriptografar.</span>
         </div>
-        <div class="container__texto">
-            <h2>Nenhuma mensagem encontrada</h2>
-            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
-        <div class="conteiner__buttons">
-            <button>Criptografar</button>
-            <button>Descriptografar</button>
-            <button>Recomeçar</button>
+
+        <div class="buttons">
+            <div class="conteiner__buttons">
+                <button class="button-criptografar">Criptografar</button>
+                <button class="button-descriptografar">Descriptografar</button>
+            </div>
         </div>
     </main>
+
+    <footer class="container-rodape">
+        <div class="rodape-texto">
+            <p>Desenvolvido por </p>
+        </div>
+    </footer>
     
     <script src="/scripts/interacao.js"></script>
 </body>
