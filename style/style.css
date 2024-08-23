@@ -25,18 +25,16 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 2%;
+    padding: 2% 2% 2% 1%;
 }
-.cabecalho__titulo {
+.cabecalho__titulo h1 {
     color: var(--cor-terciaria);
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-secundaria);
     font-size: 2.25rem;
 }
 
 .cabecalho__logo {
     width: 4%;
-    max-width: 4%;
-    max-height: 4%;
 }
 
 .conteiner__input {
@@ -46,7 +44,8 @@ body {
 }
 
 .conteiner__input .input {
-    width: auto;
+    padding: 2% 2% 2% 1%;
+    width: 650px;
     height: auto;
 }
 
@@ -97,6 +96,8 @@ body {
 
 .buttons{
     display: flex;
+    text-align: center;
+    justify-items: center;
     
 }
 .conteiner__buttons button {
@@ -104,7 +105,6 @@ body {
     color: var(--cor-secundaria);
     background-color: #D5FC34;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
     font-size: 1rem;
     margin: 4px 2px;
@@ -113,4 +113,10 @@ body {
     height: 50px;
     justify-content: space-between;
     
+}
+
+.container-rodape {
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
 }
