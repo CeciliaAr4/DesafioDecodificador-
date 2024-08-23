@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-primaria: #101322;
-    --cor-secundaria:#1E1C59; 
-    --cor-terciaria: #6BF2B3;
+    --cor-primaria: #201C26;
+    --cor-secundaria:#0D0D0E; 
+    --cor-terciaria: #D5FC34;
     
-
-
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
     
@@ -17,10 +15,86 @@
     padding: 0;
 }
 
-
 body {
     display: flex;
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
 }
 
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabecalho__titulo {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+.cabecalho__logo {
+    width: 4%;
+}
+
+.conteiner__input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.conteiner__input .input {
+    width: auto;
+    height: auto;
+}
+
+#input-text {
+    width: 50%;
+    height: 30%;
+    min-height: 100px;
+    max-height: 300px;
+    font-size: 1.5625rem;
+    color: var(--cor-terciaria);
+    border-radius: 1rem;
+    background: transparent;
+    box-shadow: none;
+    padding: 1rem;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 1rem;
+    width: 45%;
+    height: 55%;
+    
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+}
+
+#output span{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+.output-img {
+    width: 50%;
+    height: 50%;
+    margin-top: 4%;
+}
+
+.buttons{
+    border: 2px solid var(--cor-secundaria);
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    
+}
