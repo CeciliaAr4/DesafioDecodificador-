@@ -25,7 +25,7 @@ body {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    padding: 2% 2% 2% 1%;
+    padding: 2% 2% 1% 1%;
 }
 .cabecalho__titulo h1 {
     color: var(--cor-terciaria);
@@ -38,13 +38,14 @@ body {
 }
 
 .conteiner__input {
+    margin: 0;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .conteiner__input .input {
-    padding: 2% 2% 2% 1%;
+    padding: 2% 1%;
     width: 650px;
     height: auto;
 }
@@ -100,19 +101,26 @@ body {
     justify-items: center;
     
 }
+
 .conteiner__buttons button {
     border: 2px solid transparent;
     color: var(--cor-secundaria);
     background-color: #D5FC34;
-    padding: 15px 32px;
-    text-decoration: none;
     font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    padding: 5% 10%;
     margin: 4px 2px;
     cursor: pointer;
-    width: 150px;
+    width: 300px;
     height: 50px;
-    justify-content: space-between;
-    
+    text-align: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-rodape {
