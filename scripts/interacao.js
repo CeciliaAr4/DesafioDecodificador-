@@ -18,13 +18,13 @@ function descriptografar(){
     .replace(/ober/g, "o").replace(/ufat/g, "u");
 
     document.getElementById('output').innerHTML = '<textarea readonly id="input-text">' + resultDescripto +
-    '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    '</textarea>' + '<button class="buttons-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 }
 
 function copiar(){
     var textCop = document.getElementById('input-text');
 
-    textCop.selecte();
+    textCop.select();
     document.execCommand('copy');
     alert("Testo copiado"); 
 }
