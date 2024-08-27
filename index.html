@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="shortcut icon" href="/assets/GiraMoon1.png" type="i">
+    <link rel="shortcut icon" href="/assets/GiraMoon1.png" type="image/x-icon">
     <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     <main class="container">
         <header class="cabecalho">
             <img class="cabecalho__logo" src="/assets/GiraMoon1.png" alt="Uma lua rocha mostrando a lingua">
-            <h1 class="ccabecalho__titulo">Mensagens Criptografadas</h1>
+            <h1 class="cabecalho__titulo">Mensagens Criptografadas</h1>
         </header>
         <div class="conteiner__input">
             <div class="input">
@@ -22,17 +22,17 @@
                 <p>ATENÇÃO! Use apenas letras minusculas e sem acento.</p>
             </div>    
             
-            <div class="buttons">
-                <div class="conteiner__buttons">
-                    <button class="button-criptografar">Criptografar</button>
-                    <button class="button-descriptografar">Descriptografar</button>
-                </div>
+            <div id="output">
+                <img class="output-img" src="/assets/GiraMoon1.png" alt="">
+                <h2>Sua mensagem aparecerá aqui!</h2>
+                <span>Digite um texto que deseja criptografar ou descriptografar.</span>
             </div>
-        <div id="output">
-            <img class="output-img" src="/assets/GiraMoon1.png" alt="">
-            <h2>Sua mensagem aparecerá aqui!</h2>
-            <span>Digite um texto que deseja criptografar ou descriptografar.</span>
         </div>
+        <div class="buttons">
+            <div class="conteiner__buttons">
+                <button onclick="criptografar()" class="button-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="button-descriptografar">Descriptografar</button>
+            </div>
         </div>
 
     </main>
